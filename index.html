@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Peterson Art</title>
+    <link rel="stylesheet" type="text/css" href="./static/index.css" />
+    <script type="text/javascript" src="./img.js"></script>
+</head>
+<body>
+    <div id="overlayer"></div>
+    <div class="preloader">
+        <div class="pre-logo-container">
+            <div class="pre-logo">
+                <h1><div class="offset">gp</div></h1>
+                <h2>grant peterson</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a onclick="myScrollTo('header'); closeNav()">home</a>
+            <a onclick="myScrollTo('paintings'); closeNav()">paintings</a>
+            <a onclick="myScrollTo('drawings'); closeNav()" class="">drawings</a>
+            <a onclick="myScrollTo('photos'); closeNav()" class="">photos</a>
+            <a onclick="myScrollTo('bio'); closeNav()" class="">bio</a>
+            <div class="socials">
+                <a href = "mailto:grantpetersonart@gmail.com?subject = Feedback&body = Message"><img src="./static/icon/email.svg" alt=""></a>
+                <a href="https://account.venmo.com/u/groshpit"><img src="./static/icon/venmo.svg" alt=""></a>
+                <a href="https://www.instagram.com/sandgoon/"><img src="./static/icon/instagram.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="bg-gray" id="bg-gray"></div>
+        <div class="popnav" id="popnav">
+            <nav>
+                <div class="desktop">
+                    <a onclick="myScrollTo('header')">home</a>
+                    <a onclick="myScrollTo('paintings')">paintings</a>
+                    <a onclick="myScrollTo('drawings')" class="">drawings</a>
+                    <a onclick="myScrollTo('photos')" class="">photos</a>
+                    <a onclick="myScrollTo('bio')" class="">bio</a>
+                    <div class="socials right" id="social">
+                        <a href = "mailto:grantpetersonart@gmail.com?subject = Feedback&body = Message"><img src="./static/icon/email.svg" alt=""></a>
+                        <a href="https://account.venmo.com/u/groshpit"><img src="./static/icon/venmo.svg" alt=""></a>
+                        <a href="https://www.instagram.com/sandgoon/"><img src="./static/icon/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+                <a class="mobile" onclick="openNav()">gp</a>
+            </nav>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <h2>grant peterson</h2>
+            </div>
+            <nav>
+                <a class="mobile hamburger" onclick="openNav()">|||</a>
+            </nav>
+        </div>
+
+        <div id='container'></div>
+    </header>
+    <main>
+        <section id="paintings">
+            <div class="flex" id="paintings-flex">
+                <!-- JS AUTOLOAD -->
+            </section>
+        </section>
+
+        <section id="drawings">
+            <!-- <h4>drawings</h4> -->
+            <div class="flex" id="drawings-flex">
+                <!-- JS AUTOLOAD -->
+            </div>
+        </section>
+
+        <section id="photos">
+            <!-- <h4>photos</h4> -->
+            <div class="flex" id="photos-flex">
+                <!-- JS AUTOLOAD -->
+            </div>
+        </section>
+
+        <section id="bio"><h4>bio</h4>
+        <p>
+            Grant Peterson is a third generation artist and a musician who spent 17 years growing up in Beaufort, SC. He now lives and works from Charleston, SC. He is an accomplished cellist of over 10 years, performing with local orchestras, ensembles, and various groups. <br><br> In 2022 he received his Bachelor's of Fine Arts from the College of Charleston for <i> Music Performance and Studio Art.</i> His paintings have been featured in the Halsey Institute of Contemporary art Young Contemporaries series.
+        </p></section>
+
+        <footer>Design by Damon Otero | <a href="https://www.damonotero.tech">www.damonotero.tech</a></footer>
+    </main>
+</body>
+
+    <!-- SLIDESHOW -->
+    <script type="text/javascript" src="./slideshow.js"></script>
+
+    <!-- PAINTINGS -->
+    <script>
+
+        for (i of paintingsList) {
+            name = i.substr(i.lastIndexOf('/') + 1);
+            document.getElementById('paintings-flex').innerHTML += `<div>
+            <a>
+                <img src=${i} alt=""/>
+                <ul class="img-hover">
+                    <li><a href=${i} target="_blank" rel="noreferrer noopener">view full size</a></li>
+                    <li><a href = "mailto:grantpetersonart@gmail.com?subject=Interested%20In%20${name}">interested? <u>contact me</u></a></li>
+
+                </ul>
+            </a>
+            </div>`;
+        }
+        for (i of drawingsList) {
+            name = i.substr(i.lastIndexOf('/') + 1);
+            document.getElementById('drawings-flex').innerHTML += `<div>
+            <a>
+                <img src=${i} alt=""/>
+                <ul class="img-hover">
+                    <li><a href=${i} target="_blank" rel="noreferrer noopener">view full size</a></li>
+                    <li><a href = "mailto:grantpetersonart@gmail.com?subject=Interested%20In%20${name}">interested? <u>contact me</u></a></li>
+
+                </ul>
+            </a>
+            </div>`;
+        }
+        for (i of photosList) {
+            name = i.substr(i.lastIndexOf('/') + 1);
+            document.getElementById('photos-flex').innerHTML += `<div>
+            <a>
+                <img src=${i} alt=""/>
+                <ul class="img-hover">
+                    <li><a href=${i} target="_blank" rel="noreferrer noopener">view full size</a></li>
+                    <li><a href = "mailto:grantpetersonart@gmail.com?subject=Interested%20In%20${name}">interested? <u>contact me</u></a></li>
+
+                </ul>
+            </a>
+            </div>`;
+        }
+    </script>
+
+    <!-- MOBILE NAV -->
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        } 
+    </script>
+
+    <!-- POP NAV -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("popnav").style.top = "0";
+        document.getElementById("social").style.top = "0.25rem";
+    } else {
+        document.getElementById("popnav").style.top = "-100px";
+        document.getElementById("social").style.top = "-100px";
+    }
+    }
+    </script>
+
+    <!-- SCROLL -->
+    <script> 
+        function myScrollTo(id) {
+            let loc = document.querySelector("#"+id)
+            loc.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+            })
+        }
+    </script> 
+
+    <!-- Pre-Load JQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(window).load(function() {
+        $(".preloader").delay(750).fadeOut("fast");
+        $("#overlayer").delay(750).fadeOut("slow");
+        })
+    </script>
+</html>
