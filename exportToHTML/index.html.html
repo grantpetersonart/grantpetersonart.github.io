@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #808080; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+index.html</font>
+</center></td></tr></table>
+<pre>&lt;!DOCTYPE <span class="s1">html</span>&gt;
+&lt;<span class="s2">html </span><span class="s1">lang</span><span class="s3">=&quot;en&quot;</span>&gt;
+&lt;<span class="s2">head</span>&gt;
+    &lt;<span class="s2">meta </span><span class="s1">charset</span><span class="s3">=&quot;UTF-8&quot;</span>&gt;
+    &lt;<span class="s2">meta </span><span class="s1">http-equiv</span><span class="s3">=&quot;X-UA-Compatible&quot; </span><span class="s1">content</span><span class="s3">=&quot;IE=edge&quot;</span>&gt;
+    &lt;<span class="s2">meta </span><span class="s1">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s1">content</span><span class="s3">=&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;
+    &lt;<span class="s2">title</span>&gt;Grant Peterson Art&lt;/<span class="s2">title</span>&gt;
+    &lt;<span class="s2">link </span><span class="s1">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s1">type</span><span class="s3">=&quot;text/css&quot; </span><span class="s1">href</span><span class="s3">=&quot;./static/index.css&quot; </span>/&gt;
+    &lt;<span class="s2">script </span><span class="s1">type</span><span class="s3">=&quot;text/javascript&quot; </span><span class="s1">src</span><span class="s3">=&quot;./img.js&quot;</span>&gt;&lt;/<span class="s2">script</span>&gt;
+&lt;/<span class="s2">head</span>&gt;
+&lt;<span class="s2">body</span>&gt;
+    &lt;<span class="s2">div </span><span class="s1">id</span><span class="s3">=&quot;overlayer&quot;</span>&gt;&lt;/<span class="s2">div</span>&gt;
+    &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;preloader&quot;</span>&gt;
+        &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;pre-logo-container&quot;</span>&gt;
+            &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;pre-logo&quot;</span>&gt;
+                &lt;<span class="s2">h1</span>&gt;&lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;offset&quot;</span>&gt;gp&lt;/<span class="s2">div</span>&gt;&lt;/<span class="s2">h1</span>&gt;
+                &lt;<span class="s2">h2</span>&gt;grant peterson&lt;/<span class="s2">h2</span>&gt;
+            &lt;/<span class="s2">div</span>&gt;
+        &lt;/<span class="s2">div</span>&gt;
+    &lt;/<span class="s2">div</span>&gt;
+
+    &lt;<span class="s2">div </span><span class="s1">id</span><span class="s3">=&quot;myNav&quot; </span><span class="s1">class</span><span class="s3">=&quot;overlay&quot;</span>&gt;
+        &lt;<span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;javascript:void(0)&quot; </span><span class="s1">class</span><span class="s3">=&quot;closebtn&quot; </span><span class="s1">onclick</span><span class="s3">=&quot;closeNav()&quot;</span>&gt;<span class="s1">&amp;times;</span>&lt;/<span class="s2">a</span>&gt;
+        &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;overlay-content&quot;</span>&gt;
+            &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('header'); closeNav()&quot;</span>&gt;home&lt;/<span class="s2">a</span>&gt;
+            &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('paintings'); closeNav()&quot;</span>&gt;paintings&lt;/<span class="s2">a</span>&gt;
+            &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('drawings'); closeNav()&quot; </span><span class="s1">class</span><span class="s3">=&quot;&quot;</span>&gt;drawings&lt;/<span class="s2">a</span>&gt;
+            &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('photos'); closeNav()&quot; </span><span class="s1">class</span><span class="s3">=&quot;&quot;</span>&gt;photos&lt;/<span class="s2">a</span>&gt;
+            &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('bio'); closeNav()&quot; </span><span class="s1">class</span><span class="s3">=&quot;&quot;</span>&gt;bio&lt;/<span class="s2">a</span>&gt;
+            &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;socials&quot;</span>&gt;
+                &lt;<span class="s2">a </span><span class="s1">href </span><span class="s3">= &quot;mailto:grantpetersonart@gmail.com?subject = Feedback&amp;body = Message&quot;</span>&gt;&lt;<span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;./static/icon/email.svg&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span>&gt;&lt;/<span class="s2">a</span>&gt;
+                &lt;<span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;https://account.venmo.com/u/groshpit&quot;</span>&gt;&lt;<span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;./static/icon/venmo.svg&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span>&gt;&lt;/<span class="s2">a</span>&gt;
+                &lt;<span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;https://www.instagram.com/sandgoon/&quot;</span>&gt;&lt;<span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;./static/icon/instagram.svg&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span>&gt;&lt;/<span class="s2">a</span>&gt;
+            &lt;/<span class="s2">div</span>&gt;
+        &lt;/<span class="s2">div</span>&gt;
+    &lt;/<span class="s2">div</span>&gt;
+
+    &lt;<span class="s2">header </span><span class="s1">id</span><span class="s3">=&quot;header&quot;</span>&gt;
+        &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;bg-gray&quot; </span><span class="s1">id</span><span class="s3">=&quot;bg-gray&quot;</span>&gt;&lt;/<span class="s2">div</span>&gt;
+        &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;popnav&quot; </span><span class="s1">id</span><span class="s3">=&quot;popnav&quot;</span>&gt;
+            &lt;<span class="s2">nav</span>&gt;
+                &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;desktop&quot;</span>&gt;
+                    &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('header')&quot;</span>&gt;home&lt;/<span class="s2">a</span>&gt;
+                    &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('paintings')&quot;</span>&gt;paintings&lt;/<span class="s2">a</span>&gt;
+                    &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('drawings')&quot; </span><span class="s1">class</span><span class="s3">=&quot;&quot;</span>&gt;drawings&lt;/<span class="s2">a</span>&gt;
+                    &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('photos')&quot; </span><span class="s1">class</span><span class="s3">=&quot;&quot;</span>&gt;photos&lt;/<span class="s2">a</span>&gt;
+                    &lt;<span class="s2">a </span><span class="s1">onclick</span><span class="s3">=&quot;myScrollTo('bio')&quot; </span><span class="s1">class</span><span class="s3">=&quot;&quot;</span>&gt;bio&lt;/<span class="s2">a</span>&gt;
+                    &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;socials right&quot; </span><span class="s1">id</span><span class="s3">=&quot;social&quot;</span>&gt;
+                        &lt;<span class="s2">a </span><span class="s1">href </span><span class="s3">= &quot;mailto:grantpetersonart@gmail.com?subject = Feedback&amp;body = Message&quot;</span>&gt;&lt;<span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;./static/icon/email.svg&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span>&gt;&lt;/<span class="s2">a</span>&gt;
+                        &lt;<span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;https://account.venmo.com/u/groshpit&quot;</span>&gt;&lt;<span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;./static/icon/venmo.svg&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span>&gt;&lt;/<span class="s2">a</span>&gt;
+                        &lt;<span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;https://www.instagram.com/sandgoon/&quot;</span>&gt;&lt;<span class="s2">img </span><span class="s1">src</span><span class="s3">=&quot;./static/icon/instagram.svg&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span>&gt;&lt;/<span class="s2">a</span>&gt;
+                    &lt;/<span class="s2">div</span>&gt;
+                &lt;/<span class="s2">div</span>&gt;
+                &lt;<span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;mobile&quot; </span><span class="s1">onclick</span><span class="s3">=&quot;openNav()&quot;</span>&gt;gp&lt;/<span class="s2">a</span>&gt;
+            &lt;/<span class="s2">nav</span>&gt;
+        &lt;/<span class="s2">div</span>&gt;
+        &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;navbar&quot;</span>&gt;
+            &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;logo&quot;</span>&gt;
+                &lt;<span class="s2">h2</span>&gt;grant peterson&lt;/<span class="s2">h2</span>&gt;
+            &lt;/<span class="s2">div</span>&gt;
+            &lt;<span class="s2">nav</span>&gt;
+                &lt;<span class="s2">a </span><span class="s1">class</span><span class="s3">=&quot;mobile hamburger&quot; </span><span class="s1">onclick</span><span class="s3">=&quot;openNav()&quot;</span>&gt;|||&lt;/<span class="s2">a</span>&gt;
+            &lt;/<span class="s2">nav</span>&gt;
+        &lt;/<span class="s2">div</span>&gt;
+
+        &lt;<span class="s2">div </span><span class="s1">id</span><span class="s3">='container'</span>&gt;&lt;/<span class="s2">div</span>&gt;
+    &lt;/<span class="s2">header</span>&gt;
+    &lt;<span class="s2">main</span>&gt;
+        &lt;<span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;paintings&quot;</span>&gt;
+            &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;flex&quot; </span><span class="s1">id</span><span class="s3">=&quot;paintings-flex&quot;</span>&gt;
+                <span class="s4">&lt;!-- JS AUTOLOAD --&gt;</span>
+            &lt;/<span class="s2">section</span>&gt;
+        &lt;/<span class="s2">section</span>&gt;
+
+        &lt;<span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;drawings&quot;</span>&gt;
+            <span class="s4">&lt;!-- &lt;h4&gt;drawings&lt;/h4&gt; --&gt;</span>
+            &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;flex&quot; </span><span class="s1">id</span><span class="s3">=&quot;drawings-flex&quot;</span>&gt;
+                <span class="s4">&lt;!-- JS AUTOLOAD --&gt;</span>
+            &lt;/<span class="s2">div</span>&gt;
+        &lt;/<span class="s2">section</span>&gt;
+
+        &lt;<span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;photos&quot;</span>&gt;
+            <span class="s4">&lt;!-- &lt;h4&gt;photos&lt;/h4&gt; --&gt;</span>
+            &lt;<span class="s2">div </span><span class="s1">class</span><span class="s3">=&quot;flex&quot; </span><span class="s1">id</span><span class="s3">=&quot;photos-flex&quot;</span>&gt;
+                <span class="s4">&lt;!-- JS AUTOLOAD --&gt;</span>
+            &lt;/<span class="s2">div</span>&gt;
+        &lt;/<span class="s2">section</span>&gt;
+
+        &lt;<span class="s2">section </span><span class="s1">id</span><span class="s3">=&quot;bio&quot;</span>&gt;&lt;<span class="s2">h4</span>&gt;bio&lt;/<span class="s2">h4</span>&gt;
+        &lt;<span class="s2">p</span>&gt;
+            Grant Peterson is a third generation artist and a musician from the lowcountry of South Carolina. He now lives and works off grid from Asheville, North Carolina. He is an accomplished cellist of over 10 years, performing with local orchestras, ensembles, and various groups. &lt;<span class="s2">br</span>&gt;&lt;<span class="s2">br</span>&gt; In 2022 he received his Bachelor's of Fine Arts from the College of Charleston for &lt;<span class="s2">i</span>&gt; Music Performance and Studio Art.&lt;/<span class="s2">i</span>&gt; His paintings have been featured in the Halsey Institute of Contemporary art Young Contemporaries series. His work is largely inspired from feelings of fleeting nostalgia and associations of everyday life through rough figurative imagery and reflections in the natural world, art collage, and advertising.  Updated June 2022.
+        &lt;/<span class="s2">p</span>&gt;&lt;/<span class="s2">section</span>&gt;
+
+        &lt;<span class="s2">footer</span>&gt;Design by Damon Otero | &lt;<span class="s2">a </span><span class="s1">href</span><span class="s3">=&quot;https://www.damonotero.tech&quot;</span>&gt;www.damonotero.tech&lt;/<span class="s2">a</span>&gt;&lt;/<span class="s2">footer</span>&gt;
+    &lt;/<span class="s2">main</span>&gt;
+&lt;/<span class="s2">body</span>&gt;
+
+    <span class="s4">&lt;!-- SLIDESHOW --&gt;</span>
+    &lt;<span class="s2">script </span><span class="s1">type</span><span class="s3">=&quot;text/javascript&quot; </span><span class="s1">src</span><span class="s3">=&quot;./slideshow.js&quot;</span>&gt;&lt;/<span class="s2">script</span>&gt;
+
+    <span class="s4">&lt;!-- PAINTINGS --&gt;</span>
+    &lt;<span class="s2">script</span>&gt;
+
+        for (i of paintingsList) {
+            name = i.substr(i.lastIndexOf('/') + 1);
+            document.getElementById('paintings-flex').innerHTML += `&lt;div&gt;
+            &lt;a&gt;
+                &lt;img src=${i} alt=&quot;&quot;/&gt;
+                &lt;ul class=&quot;img-hover&quot;&gt;
+                    &lt;li&gt;&lt;a href=${i} target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;view full size&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href = &quot;mailto:grantpetersonart@gmail.com?subject=Interested%20In%20${name}&quot;&gt;interested? &lt;u&gt;contact me&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+
+                &lt;/ul&gt;
+            &lt;/a&gt;
+            &lt;/div&gt;`;
+        }
+        for (i of drawingsList) {
+            name = i.substr(i.lastIndexOf('/') + 1);
+            document.getElementById('drawings-flex').innerHTML += `&lt;div&gt;
+            &lt;a&gt;
+                &lt;img src=${i} alt=&quot;&quot;/&gt;
+                &lt;ul class=&quot;img-hover&quot;&gt;
+                    &lt;li&gt;&lt;a href=${i} target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;view full size&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href = &quot;mailto:grantpetersonart@gmail.com?subject=Interested%20In%20${name}&quot;&gt;interested? &lt;u&gt;contact me&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+
+                &lt;/ul&gt;
+            &lt;/a&gt;
+            &lt;/div&gt;`;
+        }
+        for (i of photosList) {
+            name = i.substr(i.lastIndexOf('/') + 1);
+            document.getElementById('photos-flex').innerHTML += `&lt;div&gt;
+            &lt;a&gt;
+                &lt;img src=${i} alt=&quot;&quot;/&gt;
+                &lt;ul class=&quot;img-hover&quot;&gt;
+                    &lt;li&gt;&lt;a href=${i} target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;view full size&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href = &quot;mailto:grantpetersonart@gmail.com?subject=Interested%20In%20${name}&quot;&gt;interested? &lt;u&gt;contact me&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+
+                &lt;/ul&gt;
+            &lt;/a&gt;
+            &lt;/div&gt;`;
+        }
+    &lt;/<span class="s2">script</span>&gt;
+
+    <span class="s4">&lt;!-- MOBILE NAV --&gt;</span>
+    &lt;<span class="s2">script</span>&gt;
+        function openNav() {
+        document.getElementById(&quot;myNav&quot;).style.height = &quot;100%&quot;;
+        }
+
+        function closeNav() {
+        document.getElementById(&quot;myNav&quot;).style.height = &quot;0%&quot;;
+        } 
+    &lt;/<span class="s2">script</span>&gt;
+
+    <span class="s4">&lt;!-- POP NAV --&gt;</span>
+    &lt;<span class="s2">script</span>&gt;
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop &gt; 100 || document.documentElement.scrollTop &gt; 100) {
+        document.getElementById(&quot;popnav&quot;).style.top = &quot;0&quot;;
+        document.getElementById(&quot;social&quot;).style.top = &quot;0.25rem&quot;;
+    } else {
+        document.getElementById(&quot;popnav&quot;).style.top = &quot;-100px&quot;;
+        document.getElementById(&quot;social&quot;).style.top = &quot;-100px&quot;;
+    }
+    }
+    &lt;/<span class="s2">script</span>&gt;
+
+    <span class="s4">&lt;!-- SCROLL --&gt;</span>
+    &lt;<span class="s2">script</span>&gt; 
+        function myScrollTo(id) {
+            let loc = document.querySelector(&quot;#&quot;+id)
+            loc.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+            })
+        }
+    &lt;/<span class="s2">script</span>&gt; 
+
+    <span class="s4">&lt;!-- Pre-Load JQuery --&gt;</span>
+    &lt;<span class="s2">script </span><span class="s1">src</span><span class="s3">='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'</span>&gt;&lt;/<span class="s2">script</span>&gt;
+    &lt;<span class="s2">script</span>&gt;
+        $(window).load(function() {
+        $(&quot;.preloader&quot;).delay(750).fadeOut(&quot;fast&quot;);
+        $(&quot;#overlayer&quot;).delay(750).fadeOut(&quot;slow&quot;);
+        })
+    &lt;/<span class="s2">script</span>&gt;
+&lt;/<span class="s2">html</span>&gt;</pre>
+</body>
+</html>
